@@ -11,8 +11,8 @@ A **high-performance, scalable, and secure** REST API for real-time face enhance
 pip install face-enhancement-api
 
 # Or install from source
-git clone https://github.com/your-username/face-enhancement-api.git
-cd face-enhancement-api
+git clone https://github.com/livlyv/face-enhancement-service.git
+cd face-enhancement-service
 pip install -e .
 ```
 
@@ -226,8 +226,8 @@ python launch.py
 ### **Installation**
 ```bash
 # Clone repository
-git clone https://github.com/your-username/face-enhancement-api.git
-cd face-enhancement-api
+git clone https://github.com/livlyv/face-enhancement-service.git
+cd face-enhancement-service
 
 # Install dependencies
 pip install -r requirements.txt

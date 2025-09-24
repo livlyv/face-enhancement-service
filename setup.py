@@ -11,14 +11,14 @@ with open("requirements_windows.txt", "r", encoding="utf-8") as fh:
     requirements = [line.strip() for line in fh if line.strip() and not line.startswith("#")]
 
 setup(
-    name="face-enhancement-api",
+    name="face-enhancement-service",
     version="1.0.0",
     author="Face Enhancement Team",
-    author_email="support@face-enhancement-api.com",
+    author_email="info@livlyv.com",
     description="High-performance REST API for real-time face enhancement",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/your-username/face-enhancement-api",
+    url="https://github.com/livlyv/face-enhancement-service",
     packages=find_packages(),
     classifiers=[
         "Development Status :: 5 - Production/Stable",
@@ -50,7 +50,7 @@ setup(
     },
     entry_points={
         "console_scripts": [
-            "face-enhancement-api=src.face_enhancer_api:main",
+            "face-enhancement-service=src.face_enhancer_api:main",
         ],
     },
     include_package_data=True,
@@ -69,8 +69,8 @@ setup(
         "real-time",
     ],
     project_urls={
-        "Bug Reports": "https://github.com/your-username/face-enhancement-api/issues",
-        "Source": "https://github.com/your-username/face-enhancement-api",
-        "Documentation": "https://github.com/your-username/face-enhancement-api#readme",
+        "Bug Reports": "https://github.com/livlyv/face-enhancement-service/issues",
+        "Source": "https://github.com/livlyv/face-enhancement-service",
+        "Documentation": "https://github.com/livlyv/face-enhancement-service#readme",
     },
 )

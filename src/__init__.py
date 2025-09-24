@@ -9,7 +9,7 @@ from .config import config, APIConfig
 
 __version__ = "1.0.0"
 __author__ = "Face Enhancement Team"
-__email__ = "support@face-enhancement-api.com"
+__email__ = "info@livlyv.com"
 __description__ = "High-performance REST API for real-time face enhancement"
 
 __all__ = [

@@ -1,5 +1,5 @@
 """
-Face Enhancement API Configuration
+Face Enhancement Service Configuration
 Cross-platform compatibility settings
 """
 

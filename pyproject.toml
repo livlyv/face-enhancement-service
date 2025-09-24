@@ -3,16 +3,16 @@ requires = ["setuptools>=45", "wheel", "setuptools_scm[toml]>=6.2"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "face-enhancement-api"
+name = "face-enhancement-service"
 dynamic = ["version"]
 description = "High-performance REST API for real-time face enhancement"
 readme = "README.md"
 license = {text = "MIT"}
 authors = [
-    {name = "Face Enhancement Team", email = "support@face-enhancement-api.com"}
+    {name = "Face Enhancement Team", email = "info@livlyv.com"}
 ]
 maintainers = [
-    {name = "Face Enhancement Team", email = "support@face-enhancement-api.com"}
+    {name = "Face Enhancement Team", email = "info@livlyv.com"}
 ]
 keywords = [
     "face-enhancement",
@@ -72,13 +72,13 @@ linux = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/your-username/face-enhancement-api"
-Documentation = "https://github.com/your-username/face-enhancement-api#readme"
-Repository = "https://github.com/your-username/face-enhancement-api.git"
-"Bug Tracker" = "https://github.com/your-username/face-enhancement-api/issues"
+Homepage = "https://github.com/livlyv/face-enhancement-service"
+Documentation = "https://github.com/livlyv/face-enhancement-service#readme"
+Repository = "https://github.com/livlyv/face-enhancement-service.git"
+"Bug Tracker" = "https://github.com/livlyv/face-enhancement-service/issues"
 
 [project.scripts]
-face-enhancement-api = "src.face_enhancer_api:main"
+face-enhancement-service = "src.face_enhancer_api:main"
 
 [tool.setuptools]
 packages = ["src"]

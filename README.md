@@ -8,7 +8,7 @@ A **high-performance, scalable, and secure** REST API for real-time face enhance
 
 ```bash
 # Install from PyPI (when published)
-pip install face-enhancement-api
+pip install face-enhancement-service
 
 # Or install from source
 git clone https://github.com/livlyv/face-enhancement-service.git
@@ -41,7 +41,7 @@ python src/face_enhancer_api.py
 ## 📁 Clean Package Structure
 
 ```
-face-enhancement-api/
+face-enhancement-service/
 ├── src/                          # Core API source code
 │   ├── __init__.py              # Package initialization
 │   ├── config.py                # Cross-platform configuration
@@ -121,7 +121,7 @@ face-enhancement-api/
 ### **Python Package**
 
 ```python
-from face_enhancement_api import FaceEnhancerClient, EnhancementConfig
+from face_enhancement_service import FaceEnhancerClient, EnhancementConfig
 
 # Initialize client
 client = FaceEnhancerClient("http://localhost:8000")

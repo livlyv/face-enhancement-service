@@ -4,7 +4,7 @@
 .PHONY: help install install-dev install-linux start test clean build package
 
 help: ## Show this help message
-	@echo "Face Enhancement API - Available Commands:"
+	@echo "Face Enhancement Service - Available Commands:"
 	@echo "=========================================="
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-20s\033[0m %s\n", $$1, $$2}'
 
@@ -45,10 +45,10 @@ install-package: ## Install the package locally
 	pip install -e .
 
 docker-build: ## Build Docker image
-	docker build -t face-enhancement-api .
+	docker build -t face-enhancement-service .
 
 docker-run: ## Run Docker container
-	docker run -p 8000:8000 face-enhancement-api
+	docker run -p 8000:8000 face-enhancement-service
 
 docker-compose-up: ## Start with Docker Compose
 	docker-compose up -d

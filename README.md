@@ -142,6 +142,16 @@ config = EnhancementConfig(
 enhanced_image = client.enhance_image("input.jpg", config)
 ```
 
+### **📱 Mobile App Integration**
+
+For detailed mobile integration examples (iOS, Android, React Native), see **[MOBILE_INTEGRATION_GUIDE.md](MOBILE_INTEGRATION_GUIDE.md)**
+
+#### **Quick Mobile Setup:**
+1. **Install Package**: `pip install face-enhancement-service`
+2. **Start Server**: `python -c "from face_enhancement_service import app; import uvicorn; uvicorn.run(app, host='0.0.0.0', port=8000)"`
+3. **Use REST API**: `POST http://your-server-ip:8000/enhance`
+4. **Send Base64 Image**: `{"image": "base64_string", "config": {...}}`
+
 ### **REST API**
 
 ```bash

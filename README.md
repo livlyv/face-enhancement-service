@@ -90,7 +90,7 @@ face-enhancement-service/
 - ✅ **Virtual contouring** for face definition
 - ✅ **Color temperature** adjustment
 - ✅ **Perfect face tracking** with 468 landmarks
-- ✅ **AI-powered face parsing** for ultimate precision
+- ✅ **AI-powered face parsing** for ultimate precision (Future Work)
 
 ## 🖥️ Platform-Specific Configuration
 

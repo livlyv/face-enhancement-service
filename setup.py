@@ -12,14 +12,15 @@ with open("requirements_windows.txt", "r", encoding="utf-8") as fh:
 
 setup(
     name="face-enhancement-service",
-    version="1.0.0",
+    version="1.0.1",
     author="Face Enhancement Team",
     author_email="info@livlyv.com",
     description="High-performance REST API for real-time face enhancement",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/livlyv/face-enhancement-service",
-    packages=find_packages(),
+    packages=["face_enhancement_service"],
+    package_dir={"face_enhancement_service": "src"},
     classifiers=[
         "Development Status :: 5 - Production/Stable",
         "Intended Audience :: Developers",
@@ -50,7 +51,7 @@ setup(
     },
     entry_points={
         "console_scripts": [
-            "face-enhancement-service=src.face_enhancer_api:main",
+            "face-enhancement-service=face_enhancement_service.face_enhancer_api:main",
         ],
     },
     include_package_data=True,

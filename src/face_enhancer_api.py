@@ -449,7 +449,8 @@ async def general_exception_handler(request, exc):
         content={"detail": "Internal server error", "status_code": 500}
     )
 
-if __name__ == "__main__":
+def main():
+    """Main function for console script entry point"""
     # Cross-platform configuration
     uvicorn_config = config.get_uvicorn_config()
     
@@ -460,3 +461,6 @@ if __name__ == "__main__":
         "face_enhancer_api:app",
         **uvicorn_config
     )
+
+if __name__ == "__main__":
+    main()
